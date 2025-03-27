@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { zValidator } from "@hono/zod-validator";
 import { prisma } from "@/app/lib/prisma";
-import { createUserSchema } from "@/shared/schema/users";
+import { createUserSchema } from "@/shared/users";
 
 export const usersApp = new Hono()
   .get("/users", async (c) => {

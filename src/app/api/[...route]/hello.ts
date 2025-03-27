@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { zValidator } from "@hono/zod-validator";
-import { helloSchema } from "@/shared/schema/hello";
+import { helloSchema } from "@/shared/hello";
 
 export const helloApp = new Hono()
   .get("/", (c) => {
